@@ -763,6 +763,8 @@ function transitSummary(tr){
   if (tr.from && tr.to) parts.push(tr.from + ' → ' + tr.to);
   else if (tr.from) parts.push('从 ' + tr.from);
   else if (tr.to) parts.push('到 ' + tr.to);
+  if (tr.exit) parts.push(tr.exit + '出');
+  if (tr.walkAfter) parts.push('出站' + tr.walkAfter);
   if (tr.minutes) parts.push('约' + tr.minutes + '分钟');
   if (tr.distText) parts.push(tr.distText);
   if (tr.note) parts.push(tr.note);
