@@ -36,10 +36,10 @@ self.addEventListener('fetch', e => {
     return;
   }
 
-  // 页面导航：网络优先，断网回退到缓存的首页
+  // 页面导航：网络优先（绕过 HTTP 缓存，保证更新即时生效），断网回退到缓存的首页
   if (e.request.mode === 'navigate') {
     e.respondWith(
-      fetch(e.request)
+      fetch(e.request, { cache: 'reload' })
         .then(r => { const cp = r.clone(); caches.open(CACHE).then(c => c.put('./index.html', cp)); return r; })
         .catch(() => caches.match('./index.html'))
     );
