@@ -1171,7 +1171,7 @@ async function amapPlanFill(){
       if (!trs.length) throw new Error('两地之间没有查到公共交通方案');
       const tr = trs[0];
       transitCtx.draft.minutes = Math.max(1, Math.round((Number(tr.duration) || 0) / 60));
-      let line = '', from = '', to = '';
+      let line = '', from = '', to = '', walkAfter = '';
       (tr.segments || []).forEach(seg => {
         if (seg.bus && seg.bus.buslines && seg.bus.buslines.length){
           const bl = seg.bus.buslines[0];
@@ -1179,10 +1179,14 @@ async function amapPlanFill(){
           if (!from && bl.departure_stop) from = bl.departure_stop.name || '';
           if (bl.arrival_stop) to = bl.arrival_stop.name || to;
         }
+        if (seg.walking && Number(seg.walking.distance) > 30){
+          walkAfter = '步行约' + Math.round(Number(seg.walking.distance)) + '米';
+        }
       });
       if (line) transitCtx.draft.line = line;
       if (from) transitCtx.draft.from = from;
       if (to) transitCtx.draft.to = to;
+      if (walkAfter) transitCtx.draft.walkAfter = walkAfter;
       openTransitEdit(transitCtx.stopIndex, transitCtx.draft);
       showToast('已按高德方案自动填入 ✓');
     } else if (md === 'walk' || md === 'taxi' || md === 'drive'){
@@ -1213,7 +1217,7 @@ function openTransitEdit(stopIndex, existing){
   if (!stop) return;
   const draft = existing
     ? Object.assign({}, existing)
-    : { mode: 'metro', line: '', from: '', to: '', minutes: '', note: '' };
+    : { mode: 'metro', line: '', from: '', to: '', minutes: '', note: '', exit: '', walkAfter: '' };
   const fromPlace = stopIndex === 0 ? (t0.hotel || null) : (day.stops[stopIndex - 1] ? day.stops[stopIndex - 1].place : null);
   const toPlace = stop.place;
   transitCtx = { stopIndex: stopIndex, draft: draft, fromPlace: fromPlace, toPlace: toPlace };
@@ -1252,6 +1256,8 @@ function openTransitEdit(stopIndex, existing){
     + '<div class="form-row col"><label>上车站</label><input id="t-from" placeholder="上车站" value="' + esc(draft.from) + '" class="plain-input"></div>'
     + '<div style="text-align:center;color:var(--tertiary);font-size:14px;line-height:1.1;padding:0">↓ 前往</div>'
     + '<div class="form-row col" style="margin-top:2px"><label>下车站</label><input id="t-to" placeholder="下车站" value="' + esc(draft.to) + '" class="plain-input"></div>'
+    + '<div class="form-row col"><label>出口（地铁/公交）</label><input id="t-exit" placeholder="如：4号口" value="' + esc(draft.exit || '') + '"></div>'
+    + '<div class="form-row col"><label>出站后怎么走</label><input id="t-walk" placeholder="如：出站后沿黄兴中路向北300米" value="' + esc(draft.walkAfter || '') + '"></div>'
     + '<div class="form-row"><label>大约用时</label><input id="t-min" type="number" inputmode="numeric" min="0" placeholder="20" value="' + esc(draft.minutes) + '"><label style="color:var(--secondary)">分钟</label></div>'
     + '<div class="form-row"><label>两地距离</label><span class="form-value">' + distLabel + '</span></div>'    + '<div class="form-row col"><label>备注</label><input id="t-note" placeholder="如：4号口出站" value="' + esc(draft.note) + '"></div>'
     + '</div>'
@@ -1262,6 +1268,8 @@ function openTransitEdit(stopIndex, existing){
   $('#t-line').addEventListener('input', e => { transitCtx.draft.line = e.target.value; });
   $('#t-from').addEventListener('input', e => { transitCtx.draft.from = e.target.value; });
   $('#t-to').addEventListener('input', e => { transitCtx.draft.to = e.target.value; });
+  $('#t-exit').addEventListener('input', e => { transitCtx.draft.exit = e.target.value; });
+  $('#t-walk').addEventListener('input', e => { transitCtx.draft.walkAfter = e.target.value; });
   $('#t-min').addEventListener('input', e => { transitCtx.draft.minutes = e.target.value; });
   $('#t-note').addEventListener('input', e => { transitCtx.draft.note = e.target.value; });
 }
@@ -1720,9 +1728,11 @@ document.addEventListener('click', e => {
           from: (d.from || '').trim(),
           to: (d.to || '').trim(),
           minutes: parseInt(d.minutes, 10) || null,
+          exit: (d.exit || '').trim(),
+          walkAfter: (d.walkAfter || '').trim(),
           note: (d.note || '').trim()
         };
-        stop.transit = (tr.line || tr.from || tr.to || tr.minutes || tr.note) ? tr : null;
+        stop.transit = (tr.line || tr.from || tr.to || tr.minutes || tr.exit || tr.walkAfter || tr.note) ? tr : null;
         save();
       }
       transitCtx = null; closeSheet(); renderDetail();
@@ -2195,13 +2205,15 @@ function normalizeImportedTrips(data){
           lat: Number(s.place && s.place.lat) || 0,
           lng: Number(s.place && s.place.lng) || 0
         },
-        transit: (s.transit && (s.transit.line || s.transit.from || s.transit.to || s.transit.minutes))
+        transit: (s.transit && (s.transit.line || s.transit.from || s.transit.to || s.transit.minutes || s.transit.exit || s.transit.walkAfter))
           ? {
               mode: TRANSIT_META[s.transit.mode] ? s.transit.mode : 'other',
               line: String(s.transit.line || ''),
               from: String(s.transit.from || ''),
               to: String(s.transit.to || ''),
               minutes: Number(s.transit.minutes) || null,
+              exit: String(s.transit.exit || ''),
+              walkAfter: String(s.transit.walkAfter || ''),
               note: String(s.transit.note || '')
             }
           : null,
