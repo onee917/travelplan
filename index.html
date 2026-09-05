@@ -1246,8 +1246,10 @@ function openTransitEdit(stopIndex, existing){
     + '<button class="chip" data-act="transit-auto" style="color:#fff;background:var(--blue)">⚡ 一键自动规划并填入</button>'
     + '<button class="chip" data-act="transit-amap">🗺️ 跳高德手动查看</button>'
     + (isTransit ? '<button class="chip" data-act="transit-metro-find">' + findLabel + '</button>' : '')
+    + (isTransit && draft.to ? '<button class="chip" data-act="transit-exit-find">🚪 查“' + esc(draft.to) + '”的出口</button>' : '')
+    + '<button class="chip" data-act="transit-apple">🍎 自带地图公交方案（含出口）</button>'
     + '</div>'
-    + '<div class="form-foot" style="margin:8px 0 0">⚡ 自动调高德真实路线，填好线路/站点/用时（公共交通也能自动）</div></div>';
+    + '<div class="form-foot" style="margin:8px 0 0">⚡ 自动调高德真实路线，填好线路/站点/用时（公共交通也能自动）；出口编号高德接口不提供，可点按钮查询后手动填</div></div>';
   openSheet(
     '<div class="sheet-nav"><div class="sheet-title">' + title + '</div><button class="nav-btn" data-act="sheet-cancel">取消</button></div>'
     + '<div class="card form-card">'
@@ -1715,6 +1717,17 @@ document.addEventListener('click', e => {
       const f = wgs2gcj(transitCtx.fromPlace.lat, transitCtx.fromPlace.lng);
       const kw = transitCtx.draft.mode === 'bus' ? '公交站' : '地铁站';
       location.href = 'https://uri.amap.com/search?keyword=' + encodeURIComponent(kw) + '&center=' + f.lng + ',' + f.lat + '&src=travelplan&coordinate=gaode';
+      break;
+    }
+    case 'transit-apple': {
+      if (!transitCtx || !transitCtx.toPlace) break;
+      location.href = 'https://maps.apple.com/?daddr=' + transitCtx.toPlace.lat + ',' + transitCtx.toPlace.lng + '&dirflg=r';
+      break;
+    }
+    case 'transit-exit-find': {
+      if (!transitCtx || !transitCtx.toPlace) break;
+      const g = wgs2gcj(transitCtx.toPlace.lat, transitCtx.toPlace.lng);
+      location.href = 'https://uri.amap.com/search?keyword=' + encodeURIComponent(transitCtx.draft.to + '站 出口') + '&center=' + g.lng + ',' + g.lat + '&src=travelplan&coordinate=gaode';
       break;
     }
     case 'transit-save': {
