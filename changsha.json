@@ -1,0 +1,121 @@
+[
+  {
+    "name": "长沙4日游",
+    "destinationName": "长沙",
+    "destinationPlace": { "name": "长沙市", "address": "湖南省, 中国", "lat": 28.1986, "lng": 112.9709 },
+    "hotel": { "name": "欢漫酒店（五一广场南门口地铁站店）", "address": "天心区黄兴南路, 近南门口地铁站", "lat": 28.1858, "lng": 112.9723 },
+    "startDate": "2026-09-07T00:00:00+08:00",
+    "endDate": "2026-09-10T00:00:00+08:00",
+    "days": [
+      {
+        "date": "2026-09-07T00:00:00+08:00",
+        "depart": "10:30",
+        "stops": [
+          { "place": { "name": "五一广场", "address": "黄兴中路, 芙蓉区, 长沙", "lat": 28.1986, "lng": 112.9709 }, "stay": 40, "transit": { "mode": "metro", "line": "1号线", "from": "南门口站", "to": "五一广场站", "minutes": 8, "note": "2站直达" }, "photos": [ { "where": "广场东南角地铁口上方的地名标识旁", "pose": "并肩走路抓拍，自然不看镜头", "time": "注意：大屏前合影先问清是否收费，陌生人搭讪不要理睬" } ] },
+          { "place": { "name": "长沙IFS国金中心", "address": "芙蓉区黄兴中路, 长沙", "lat": 28.1995, "lng": 112.9745 }, "stay": 60, "transit": { "mode": "walk", "line": "", "from": "五一广场", "to": "IFS国金中心", "minutes": 4, "note": "" }, "photos": [ { "where": "7楼雕塑花园 KAWS雕塑右侧后方（室外露台）", "pose": "背靠栏杆远眺城市天际线；和KAWS并排侧身对视", "time": "16:00-17:30 光线最柔" }, { "where": "1楼巨人脸 + 东一门港风长沙墙", "pose": "港风街拍侧颜", "time": "随时；商场内有寄存行李处" } ] },
+          { "place": { "name": "坡子街", "address": "天心区, 长沙", "lat": 28.1942, "lng": 112.9648 }, "stay": 60, "transit": { "mode": "walk", "line": "", "from": "IFS", "to": "坡子街", "minutes": 8, "note": "" }, "photos": [ { "where": "火宫殿牌楼正下方仰拍", "pose": "一手举臭豆腐一手比耶，抓拍表情", "time": "晚上灯笼亮起后" } ] },
+          { "place": { "name": "黄兴路步行街", "address": "芙蓉区, 长沙", "lat": 28.1911, "lng": 112.9708 }, "stay": 45, "transit": { "mode": "walk", "line": "", "from": "坡子街", "to": "黄兴路步行街", "minutes": 5, "note": "" }, "photos": [ { "where": "黄兴铜像正对面回望步行街纵深", "pose": "赛博朋克风 walking shot：牵着走自然回眸", "time": "20:00后亮灯最出片；美食街只买明码标价的，水果捞别买" } ] },
+          { "place": { "name": "超级文和友（海信广场）", "address": "湘江中路二段, 天心区, 长沙", "lat": 28.1952, "lng": 112.9655 }, "stay": 60, "transit": { "mode": "walk", "line": "", "from": "黄兴路步行街", "to": "海信广场", "minutes": 15, "note": "" }, "photos": [ { "where": "入口楼梯上二层的80年代老社区布景区", "pose": "复古港风：红砖墙+霓虹灯牌下侧脸，好多明星来打卡过", "time": "拍拍照就可以，不建议在里面吃东西" } ] },
+          { "place": { "name": "太平老街", "address": "天心区, 长沙", "lat": 28.1971, "lng": 112.9663 }, "stay": 60, "transit": { "mode": "walk", "line": "", "from": "文和友", "to": "太平老街", "minutes": 6, "note": "" }, "photos": [ { "where": "老街中段石板路正中央", "pose": "街中央纵深构图 walking shot；奶茶道具互动", "time": "9:00前几乎没人" } ] },
+          { "place": { "name": "杜甫江阁", "address": "湘江中路辅路, 天心区, 长沙", "lat": 28.1885, "lng": 112.9632 }, "stay": 60, "transit": { "mode": "walk", "line": "", "from": "太平老街", "to": "杜甫江阁", "minutes": 11, "note": "" }, "photos": [ { "where": "江阁正面广场西侧沿江栏杆", "pose": "亮灯瞬间很震撼：背影望远+正面合影剪影", "time": "19点左右亮灯；里面收费可以不进去" } ] },
+          { "place": { "name": "东瓜山夜市", "address": "裕南街街道, 天心区, 长沙", "lat": 28.1712, "lng": 112.9812 }, "stay": 120, "transit": { "mode": "taxi", "line": "", "from": "杜甫江阁", "to": "东瓜山夜市", "minutes": 10, "note": "" }, "photos": [ { "where": "夜市一条街中段", "pose": "本地人都去的夜市，地道小吃夜宵，拿上串串边走边吃", "time": "19:00后" } ] }
+        ],
+        "meals": {
+          "breakfast": { "content": "酒店周边嗦碗长沙米粉", "note": "肉丝粉加码：酸豆角、剁椒、木耳肉丝", "place": { "name": "欢漫酒店（五一广场南门口地铁站店）", "address": "天心区黄兴南路, 近南门口地铁站", "lat": 28.1858, "lng": 112.9723 } },
+          "lunch": { "content": "坡子街火宫殿总店：臭豆腐、糖油粑粑、龙脂猪血", "note": "排队人多的话街边老店味道一样在线", "place": { "name": "坡子街", "address": "天心区, 长沙", "lat": 28.1942, "lng": 112.9648 } },
+          "dinner": { "content": "东瓜山夜市：本地人的夜宵一条街，烧烤炸炸炸", "note": "开了很多年的老店，味道local不会踩雷", "place": { "name": "东瓜山夜市", "address": "裕南街街道, 天心区, 长沙", "lat": 28.1712, "lng": 112.9812 } }
+        },
+        "notes": [
+          { "text": "五一广场大屏打卡：和穿奇装异服的人合照前先问清要不要收费；碰到陌生人搭讪不要理睬", "category": "other", "isDone": false, "place": null },
+          { "text": "黄兴步行街美食街：只买明码标价的，水果捞别买", "category": "other", "isDone": false, "place": null },
+          { "text": "文和友：装潢复古很出片，拍拍照即可，不建议在里面吃东西", "category": "other", "isDone": false, "place": null },
+          { "text": "想吃本地家常菜：砂子塘路的廖师傅家菜馆就在东瓜山附近", "category": "snack", "isDone": false, "place": { "name": "廖师傅家菜馆（砂子塘路）", "address": "砂子塘路, 雨花区, 长沙", "lat": 28.1662, "lng": 112.9865 } },
+          { "text": "黑色经典臭豆腐：太平街/坡子街都有门店", "category": "snack", "isDone": false, "place": null }
+        ],
+        "reservations": []
+      },
+      {
+        "date": "2026-09-08T00:00:00+08:00",
+        "depart": "08:30",
+        "stops": [
+          { "place": { "name": "湖南博物院", "address": "东风路50号, 开福区, 长沙", "lat": 28.2154, "lng": 112.9883 }, "stay": 150, "transit": { "mode": "taxi", "line": "", "from": "酒店", "to": "湖南博物院", "minutes": 15, "note": "提前7天预约，每晚20点放票" }, "photos": [ { "where": "正门大台阶中轴（整个建筑入镜）", "pose": "台阶上坐拍或上行走抓拍", "time": "入馆前人少；注意停止入馆时间，每周一闭馆" } ] },
+          { "place": { "name": "东风路文创园", "address": "东风路, 开福区, 长沙", "lat": 28.2105, "lng": 112.9870 }, "stay": 50, "transit": { "mode": "walk", "line": "", "from": "湖南博物院", "to": "东风路文创园", "minutes": 12, "note": "" }, "photos": [ { "where": "园区内废弃铁轨段", "pose": "铁轨纵深构图：坐着拍或沿轨走抓拍，工业风很好拍", "time": "下午；这一块还有集市、旧物店、咖啡店" } ] },
+          { "place": { "name": "古开福寺", "address": "开福寺路, 开福区, 长沙", "lat": 28.2281, "lng": 112.9715 }, "stay": 60, "transit": { "mode": "taxi", "line": "", "from": "东风路文创园", "to": "古开福寺", "minutes": 8, "note": "门票10元" }, "photos": [ { "where": "大雄宝殿前黄墙（右侧龙柱旁）", "pose": "素色穿搭双手合十侧身照，红墙打卡很出片", "time": "拜早不拜晚，尽量早点去；进去后先燃香再礼拜" } ] },
+          { "place": { "name": "潮宗街", "address": "开福区, 长沙", "lat": 28.2065, "lng": 112.9681 }, "stay": 60, "transit": { "mode": "taxi", "line": "", "from": "古开福寺", "to": "潮宗街", "minutes": 11, "note": "" }, "photos": [ { "where": "麻石老街中段白墙文创店铺门前", "pose": "咖啡店门口坐姿+逛街抓拍", "time": "下午" } ] },
+          { "place": { "name": "轩辕殿巷", "address": "开福区, 长沙", "lat": 28.1998, "lng": 112.9690 }, "stay": 40, "transit": { "mode": "walk", "line": "", "from": "潮宗街", "to": "轩辕殿巷", "minutes": 8, "note": "" }, "photos": [ { "where": "巷内白墙老宅门前", "pose": "巷子纵深构图 walking shot", "time": "下午" } ] },
+          { "place": { "name": "丰盛西里", "address": "人民西路, 芙蓉区, 长沙", "lat": 28.1935, "lng": 112.9720 }, "stay": 50, "transit": { "mode": "taxi", "line": "", "from": "轩辕殿巷", "to": "丰盛西里", "minutes": 8, "note": "" }, "photos": [ { "where": "长沙地标涂鸦墙前", "pose": "涂鸦墙下 creative pose；文创店咖啡甜品店好好逛", "time": "下午" } ] },
+          { "place": { "name": "万家丽国际MALL·停机坪", "address": "万家丽中路, 芙蓉区, 长沙", "lat": 28.1845, "lng": 113.0225 }, "stay": 60, "transit": { "mode": "taxi", "line": "", "from": "丰盛西里", "to": "万家丽国际MALL", "minutes": 15, "note": "顶楼停机坪" }, "photos": [ { "where": "顶楼停机坪中央 H 标识旁", "pose": "晚上顶楼拍夕阳很出片；大广角张开手臂", "time": "日落前1小时" } ] },
+          { "place": { "name": "扬帆夜市", "address": "万家丽广场旁, 芙蓉区, 长沙", "lat": 28.1939, "lng": 113.0306 }, "stay": 120, "transit": { "mode": "walk", "line": "", "from": "万家丽", "to": "扬帆夜市", "minutes": 5, "note": "就在停机坪楼下旁边" }, "photos": [ { "where": "主街中段灯串最密处", "pose": "双手举满小吃回头笑", "time": "20:00后小吃很多" } ] }
+        ],
+        "meals": {
+          "breakfast": { "content": "酒店早餐，8点半出发", "note": "湖南博物院记得带身份证", "place": { "name": "欢漫酒店（五一广场南门口地铁站店）", "address": "天心区黄兴南路, 近南门口地铁站", "lat": 28.1858, "lng": 112.9723 } },
+          "lunch": { "content": "古开福寺素斋：斋面+素什锦", "note": "斋面还可以试试；寺内素斋便宜又地道", "place": { "name": "古开福寺", "address": "开福寺路, 开福区, 长沙", "lat": 28.2281, "lng": 112.9715 } },
+          "dinner": { "content": "扬帆夜市：从街头吃到街尾", "note": "停机坪拍完夕阳直接下楼吃", "place": { "name": "扬帆夜市", "address": "万家丽广场旁, 芙蓉区, 长沙", "lat": 28.1939, "lng": 113.0306 } }
+        },
+        "notes": [
+          { "text": "湖南博物院：旺季提前7天预约，每晚20点准时放票；注意停止入馆时间，每周一闭馆", "category": "other", "isDone": false, "place": null },
+          { "text": "古开福寺：门票10元，拜早不拜晚尽量早点去；进去后先燃香再礼拜，红墙拍照很出片", "category": "other", "isDone": false, "place": null },
+          { "text": "东风路文创园：废弃铁轨拍照出片，还有集市、旧物店、咖啡店，工业风很好拍", "category": "other", "isDone": false, "place": null },
+          { "text": "丰盛西里：长沙 citywalk 不可错过，藏在市中心巷子里，长沙地标涂鸦墙+文创店+咖啡甜品店", "category": "other", "isDone": false, "place": null }
+        ],
+        "reservations": [
+          { "title": "湖南博物院门票", "slot": "上午场 9:00-12:00", "code": "", "platform": "湖南博物院公众号" }
+        ]
+      },
+      {
+        "date": "2026-09-09T00:00:00+08:00",
+        "depart": "08:00",
+        "stops": [
+          { "place": { "name": "橘子洲", "address": "岳麓区, 长沙", "lat": 28.1897, "lng": 112.9561 }, "stay": 120, "transit": { "mode": "metro", "line": "1号线转2号线", "from": "南门口站", "to": "橘子洲站", "minutes": 20, "note": "直达很方便，最好不要打车去，堵车严重" }, "photos": [ { "where": "洲内游园建议坐小火车", "pose": "草坪+江景合影，体验感比较好", "time": "节假日记得提前预约" } ] },
+          { "place": { "name": "怡同学少年广场", "address": "橘子洲东岸, 长沙", "lat": 28.1820, "lng": 112.9610 }, "stay": 30, "transit": { "mode": "walk", "line": "", "from": "橘子洲站", "to": "怡同学少年广场", "minutes": 15, "note": "" }, "photos": [ { "where": "广场观景台（红墙前）", "pose": "与青年毛泽东雕像隔江相望，红墙为背景拍出电影感大片", "time": "上午顺光" } ] },
+          { "place": { "name": "岳麓山（南门）", "address": "麓山南路, 岳麓区, 长沙", "lat": 28.1800, "lng": 112.9400 }, "stay": 30, "transit": { "mode": "taxi", "line": "", "from": "怡同学少年广场", "to": "岳麓山南门", "minutes": 15, "note": "不想爬山的建议直接走南门，离爱晚亭、岳麓书院都很近，打卡很方便" }, "photos": [ { "where": "南门山门牌坊前", "pose": "与山门合影", "time": "中午前" } ] },
+          { "place": { "name": "爱晚亭", "address": "登高路, 岳麓区, 长沙", "lat": 28.1841, "lng": 112.9335 }, "stay": 30, "transit": { "mode": "walk", "line": "", "from": "岳麓山南门", "to": "爱晚亭", "minutes": 10, "note": "" }, "photos": [ { "where": "亭前池塘对岸拍全景倒影", "pose": "亭旁石凳坐姿望亭；秋天红枫当前景", "time": "清晨或傍晚逆光最美" } ] },
+          { "place": { "name": "岳麓书院", "address": "岳麓区, 长沙", "lat": 28.1839, "lng": 112.9351 }, "stay": 90, "transit": { "mode": "walk", "line": "", "from": "爱晚亭", "to": "岳麓书院", "minutes": 8, "note": "" }, "photos": [ { "where": "大门“岳麓书院”匾额正前台阶下", "pose": "与门匾同框合影", "time": "需提前预约" } ] },
+          { "place": { "name": "湖南大学", "address": "麓山路, 岳麓区, 长沙", "lat": 28.1835, "lng": 112.9413 }, "stay": 50, "transit": { "mode": "walk", "line": "", "from": "岳麓书院", "to": "湖南大学东方红广场", "minutes": 6, "note": "" }, "photos": [ { "where": "东方红广场毛泽东像前", "pose": "瞻仰伟人雕像+红砖绿瓦校园合影", "time": "千年学府，绿树成荫" } ] },
+          { "place": { "name": "麓山南路美食街", "address": "麓山南路, 岳麓区, 长沙", "lat": 28.1825, "lng": 112.9450 }, "stay": 90, "transit": { "mode": "walk", "line": "", "from": "湖南大学", "to": "麓山南路", "minutes": 3, "note": "" }, "photos": [ { "where": "大学城美食一条街中段", "pose": "各种美食小吃便宜又好吃，边走边吃", "time": "人多可能排队，建议错开饭点" } ] },
+          { "place": { "name": "后湖国际艺术园", "address": "岳麓区, 长沙", "lat": 28.1639, "lng": 112.9398 }, "stay": 90, "transit": { "mode": "taxi", "line": "", "from": "麓山南路", "to": "后湖国际艺术园", "minutes": 8, "note": "" }, "photos": [ { "where": "湖边艺术街区（很韩的一条街）", "pose": "随手拍都出片；天气好来走走拍拍", "time": "傍晚江边还有驻唱，很 chill" } ] }
+        ],
+        "meals": {
+          "breakfast": { "content": "酒店早餐，8点出发", "note": "橘子洲/岳麓山/岳麓书院都要验预约码", "place": { "name": "欢漫酒店（五一广场南门口地铁站店）", "address": "天心区黄兴南路, 近南门口地铁站", "lat": 28.1858, "lng": 112.9723 } },
+          "lunch": { "content": "登高路简餐垫一垫（重头是麓山南路小吃）", "note": "麓山南路建议错开饭点，人多排队", "place": { "name": "岳麓山南门", "address": "麓山南路, 岳麓区, 长沙", "lat": 28.1800, "lng": 112.9400 } },
+          "dinner": { "content": "麓山南路小吃当晚餐：各种美食小吃便宜又好吃", "note": "", "place": { "name": "麓山南路美食街", "address": "麓山南路, 岳麓区, 长沙", "lat": 28.1825, "lng": 112.9450 } }
+        },
+        "notes": [
+          { "text": "橘子洲：出行建议地铁2号线直达，最好不要打车去，堵车严重；节假日记得提前预约；进去之后游园建议坐小火车，体验感比较好", "category": "other", "isDone": false, "place": null },
+          { "text": "怡同学少年广场：观景台与青年毛泽东雕像隔江相望，红墙为背景拍出电影感大片", "category": "other", "isDone": false, "place": null },
+          { "text": "岳麓山：不想爬山的建议直接走南门，离爱晚亭、岳麓书院都很近，打卡很方便", "category": "other", "isDone": false, "place": null },
+          { "text": "麓山南路：热闹的大学城美食一条街，便宜又好吃，人多建议错开饭点", "category": "snack", "isDone": false, "place": null },
+          { "text": "后湖国际艺术园：很韩的一条街，傍晚江边还有驻唱，很 chill", "category": "other", "isDone": false, "place": null },
+          { "text": "如时间充裕，可在橘子洲码头乘游船绕橘子洲一圈（提前买好游船票）", "category": "other", "isDone": false, "place": null }
+        ],
+        "reservations": [
+          { "title": "橘子洲入园预约", "slot": "全天", "code": "", "platform": "橘子洲景区官方小程序" },
+          { "title": "岳麓山入园预约", "slot": "全天", "code": "", "platform": "岳麓山橘子洲景区小程序" },
+          { "title": "岳麓书院门票", "slot": "上午场", "code": "", "platform": "岳麓书院官方小程序" }
+        ]
+      },
+      {
+        "date": "2026-09-10T00:00:00+08:00",
+        "depart": "09:30",
+        "stops": [
+          { "place": { "name": "湖南烈士公园", "address": "开福区, 长沙", "lat": 28.2139, "lng": 112.9937 }, "stay": 90, "transit": { "mode": "taxi", "line": "", "from": "酒店", "to": "烈士公园南门", "minutes": 15, "note": "" }, "photos": [ { "where": "年嘉湖拱桥上（湖面倒影机位）", "pose": "桥中央并肩远眺；湖边喂鸽子互动", "time": "清晨或傍晚" } ] },
+          { "place": { "name": "黑色经典臭豆腐（太平街店）", "address": "太平街, 天心区, 长沙", "lat": 28.1968, "lng": 112.9658 }, "stay": 40, "transit": { "mode": "taxi", "line": "", "from": "烈士公园", "to": "太平街", "minutes": 15, "note": "买伴手礼" }, "photos": [ { "where": "太平街门店招牌下", "pose": "举臭豆腐盒互动照", "time": "中午" } ] },
+          { "place": { "name": "金满地美食王国", "address": "五一广场地下商业街, 芙蓉区, 长沙", "lat": 28.1980, "lng": 112.9730 }, "stay": 60, "transit": { "mode": "walk", "line": "", "from": "黑色经典", "to": "金满地美食王国", "minutes": 6, "note": "" }, "photos": [ { "where": "地下美食街入口", "pose": "边逛边吃抓拍", "time": "午餐时间" } ] },
+          { "place": { "name": "蜜雪冰城（青园路店）", "address": "青园路, 天心区, 长沙", "lat": 28.1438, "lng": 112.9897 }, "stay": 30, "transit": { "mode": "taxi", "line": "", "from": "金满地", "to": "蜜雪冰城", "minutes": 12, "note": "" }, "photos": [ { "where": "门店雪王雕塑旁", "pose": "和雪王合影碰杯柠檬水", "time": "下午" } ]
+          }
+        ],
+        "meals": {
+          "breakfast": { "content": "酒店早餐，收拾行李退房（行李寄存前台）", "note": "", "place": { "name": "欢漫酒店（五一广场南门口地铁站店）", "address": "天心区黄兴南路, 近南门口地铁站", "lat": 28.1858, "lng": 112.9723 } },
+          "lunch": { "content": "金满地美食王国：地下美食街一路吃过去", "note": "", "place": { "name": "金满地美食王国", "address": "五一广场地下商业街, 芙蓉区, 长沙", "lat": 28.1980, "lng": 112.9730 } },
+          "dinner": { "content": "返程前在高铁站/机场嗦一碗粉收尾", "note": "", "place": null }
+        },
+        "notes": [
+          { "text": "黑色经典总店：买臭豆腐伴手礼送人", "category": "snack", "isDone": false, "place": null },
+          { "text": "蜜雪冰城：打卡“最大的那家”，和雪王合影", "category": "drink", "isDone": false, "place": null },
+          { "text": "返程注意时间，预留去高铁站/机场的打车时间", "category": "other", "isDone": false, "place": null }
+        ],
+        "reservations": []
+      }
+    ]
+  }
+]
