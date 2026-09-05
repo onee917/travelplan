@@ -101,8 +101,8 @@
           { "place": { "name": "湖南烈士公园", "address": "开福区, 长沙", "lat": 28.2139, "lng": 112.9937 }, "stay": 90, "transit": { "mode": "taxi", "line": "", "from": "酒店", "to": "烈士公园南门", "minutes": 15, "note": "", "exit": "", "walkAfter": "" }, "photos": [ { "where": "年嘉湖拱桥上（湖面倒影机位）", "pose": "桥中央并肩远眺；湖边喂鸽子互动", "time": "清晨或傍晚" } ] },
           { "place": { "name": "黑色经典臭豆腐（黄兴广场店）", "address": "黄兴路步行街, 芙蓉区, 长沙", "lat": 28.1905, "lng": 112.9707 }, "stay": 40, "transit": { "mode": "taxi", "line": "", "from": "烈士公园", "to": "黄兴广场", "minutes": 15, "note": "" }, "photos": [ { "where": "黄兴广场门店招牌下", "pose": "举臭豆腐盒互动照；现吃+买伴手礼", "time": "中午" } ] },
           { "place": { "name": "KINGLOMO 金粒门（国金街二店）", "address": "黄兴中路78号国金街地下B层B058, 芙蓉区, 长沙", "lat": 28.1968, "lng": 112.9725 }, "stay": 40, "transit": { "mode": "walk", "line": "", "from": "黑色经典", "to": "国金街地下", "minutes": 4, "note": "地铁直达" }, "photos": [ { "where": "国金街地下店铺门口", "pose": "提着零食袋边走边吃；推荐魔芋丝（香辣/山胡椒味）", "time": "长沙伴手礼首选" } ] },
-          { "place": { "name": "蜜雪冰城（黄兴路店）", "address": "黄兴路, 长沙", "lat": 28.1902, "lng": 112.9703 }, "stay": 30, "transit": { "mode": "walk", "line": "", "from": "金粒门", "to": "蜜雪冰城", "minutes": 5, "note": "" }, "photos": [ { "where": "门店雪王雕塑旁", "pose": "和雪王合影碰杯柠檬水", "time": "下午" } ]
-          }
+          { "place": { "name": "蜜雪冰城（黄兴路店）", "address": "黄兴路, 长沙", "lat": 28.1902, "lng": 112.9703 }, "stay": 30, "transit": { "mode": "walk", "line": "", "from": "金粒门", "to": "蜜雪冰城", "minutes": 5, "note": "" }, "photos": [ { "where": "门店雪王雕塑旁", "pose": "和雪王合影碰杯柠檬水", "time": "下午" } ] },
+          { "place": { "name": "零食王国（嘉悦汇商业广场）", "address": "建湘路182号嘉悦汇商业广场-101, 芙蓉区, 长沙", "lat": 28.1945, "lng": 112.9857 }, "stay": 40, "transit": { "mode": "taxi", "line": "", "from": "蜜雪冰城", "to": "零食王国", "minutes": 8, "note": "" }, "photos": [ { "where": "嘉悦汇商业广场零食门店内", "pose": "零食堆满手推车抓拍", "time": "下午" } ] }
         ],
         "meals": {
           "breakfast": { "content": "酒店早餐，收拾行李退房（行李寄存前台）", "note": "", "place": { "name": "欢漫酒店（五一广场南门口地铁站店）", "address": "天心区黄兴南路, 近南门口地铁站", "lat": 28.1858, "lng": 112.9723 } },
